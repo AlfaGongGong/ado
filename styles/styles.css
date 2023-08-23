@@ -1,0 +1,365 @@
+:root {
+  /* Colors */
+  --brand: #ff3cac;
+  --accent: #fffb96;
+
+  /* Animations */
+  --transition: fadeIn 1s ease;
+
+  /* Fonts */
+  --heading: 'Poppins', sans-serif;
+
+}
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--heading);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--brand);
+  background-color: var(--accent);
+  transition: var(--transition);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+  scroll-padding-bottom: 60px;
+  scroll-margin-top: 60px;
+  scroll-margin-bottom: 60px;
+  scroll-snap-type: mandatory;
+}
+
+/* Sections */
+
+section {
+  padding: 6rem 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--brand);
+  transition: var(--transition);
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+}
+
+/* Hero */
+.hero {
+  color: #fff;
+  background: var(--brand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  transition: var(--transition);
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100vh;
+  min-width: 100%;
+  min-height: 100%;
+
+}
+
+.hero h1 {
+  font-size: 3rem;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  transition: var(--transition);
+  font-family: var(--heading);
+  font-weight: 700;
+  color: #fff;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero h1::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  top: 0;
+  left: -100%;
+  z-index: -1;
+  transition: var(--transition);
+  transform: skewY(2deg);
+  transform-origin: bottom left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.hero h1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  top: 0;
+  left: 100%;
+  z-index: -1;
+  transition: var(--transition);
+  transform: skewY(-2deg);
+  transform-origin: bottom right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.hero h1:hover::before {
+  left: 0;
+}
+
+.hero h1:hover::after {
+  left: 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  transition: var(--transition);
+  font-family: var(--heading);
+  font-weight: 700;
+  color: #fff;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero p::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  top: 0;
+  left: -100%;
+  z-index: -1;
+  transition: var(--transition);
+  transform: skewY(2deg);
+  transform-origin: bottom left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+/* Why Choose Us */
+.why-us {
+  padding: 6rem 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--accent);
+  transition: var(--transition);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-wrap: break-word;
+
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+  transition: var(--transition);
+  margin: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+
+}
+
+.card-img-top:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  transition: var(--transition);
+  margin: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: var(--accent);
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: var(--transition);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.card:hover.card-img-top {
+  transform: scale(1.1);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: var(--transition);
+  margin: 15px;
+  z-index: 1;
+  position: relative;
+}
+
+.card-title {
+  color: #fff;
+  transition: var(--transition);
+  margin: 15px;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  font-family: var(--heading);
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-text {
+  color: #fff;
+  transition: var(--transition);
+  margin: 15px;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  font-family: var(--heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  overflow: break-word;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 15px;
+}
+
+/* Testimonials */
+.testimonial {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+/* How It Works */
+.how-it-works {}
+
+/* Contact */
+.contact {
+  background: #f2f2f2;
+}
+
+/* Footer */
+footer {
+  background: #fff;
+  color: #333;
+}
+
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+}
+
+p {
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+}
+
+.btn-brand {
+  background: var(--brand);
+  color: #fff;
+}
