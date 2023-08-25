@@ -1,150 +1,158 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   <head>
     <title>Ado car brat</title>
-
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./styles/styles.css">
-
+    <link
+      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      referrerpolicy="no-referrer"
+      rel="stylesheet"
+    />
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Eczar&family=Gentium+Plus&family=Libre+Baskerville&family=Libre+Franklin&family=Proza+Libre&family=Rubik&family=Taviraj&family=Trirong&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS-->
+    <link href="./styles/styles.css" rel="stylesheet" />
   </head>
 
   <body>
-
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-      <img src="https://via.placeholder.com/100x30.png?text=Logo" alt="Logo">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <img
+        alt="Logo"
+        src="https://via.placeholder.com/100x30.png?text=Logo"
+        class="logo"
+      />
+      <button
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        class="navbar-toggler"
+        data-target="#navbarNav"
+        data-toggle="collapse"
+        type="button"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#home"><i class="fa-solid fa-house" style="color: #ff3cac;"></i>Home</a>
+            <a class="nav-link" href="#home"
+              ><i class="fa-solid fa-house" style="color: #ff3cac"></i>Home
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about"><i class="fa-solid fa-user" style="color: #ff3cac;"></i>About</a>
+            <a class="nav-link" href="#about"
+              ><i class="fa-solid fa-user" style="color: #ff3cac"></i>About
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact"><i class="fa-solid fa-phone" style="color: #ff3cac;"></i>Contact</a>
+            <a class="nav-link" href="#contact"
+              ><i class="fa-solid fa-phone" style="color: #ff3cac"></i>Contact
+            </a>
           </li>
         </ul>
       </div>
-
     </nav>
-
     <!-- Hero -->
-    <header id="home" class="hero parallax">
-      <div class="container">
-        <h1 class="animated animate__fadeInUp">Za brata šminka i fenseraj <br>
-          (inaèe ovdje ide naziv firme)</h1>
+    <section class="hero parallax">
+      <h1>Za brata šminka i fenseraj <br />(inaèe ovdje ide naziv firme)</h1>
+      <div class="container animate-blob">
         <p>Connecting you from Mostar to your destination</p>
-        <a href="#contact" class="btn btn-primary">Contact for a Ride</a>
+        <button class="hero-btn" data-target="#contact" type="button">
+          Contact for a Ride
+        </button>
       </div>
-    </header>
+    </section>
+
     <!-- Why Choose Us -->
-    <section id="why-us" class="why-us">
+
+    <section class="why-us" id="why-us">
       <div class="container">
-
         <h2 class="text-center mb-4">Why Choose Us?</h2>
-
         <div class="row">
-
           <div class="col-md-4">
             <div class="card animated fadeInLeft">
-              <img src="./images/affordable.png" class="card-img-top">
-
+              <img class="card-img-top" src="./images/affordable.png" />
               <div class="card-body">
                 <h5 class="card-title">Affordable</h5>
                 <p class="card-text">Competitive and fair pricing.</p>
               </div>
             </div>
           </div>
-
           <div class="col-md-4">
             <div class="card animated fadeInDown">
-              <img src="./images/safe.png" class="card-img-top">
-
+              <img class="card-img-top" src="./images/safe.png" />
               <div class="card-body">
                 <h5 class="card-title">Reliable</h5>
                 <p class="card-text">Timely pickups and skilled drivers.</p>
               </div>
             </div>
           </div>
-
           <div class="col-md-4">
             <div class="card animated fadeInRight">
-              <img src="./images/chair_1053038.png" class="card-img-top">
-              <i class=""></i>
+              <img class="card-img-top" src="./images/chair_1053038.png" /><i
+                class
+              ></i>
               <div class="card-body">
                 <h5 class="card-title">Comfortable</h5>
-                <p class="card-text">Relaxing rides in clean, spacious vehicles.</p>
+                <p class="card-text">
+                  Relaxing rides in clean, spacious vehicles.
+                </p>
               </div>
             </div>
           </div>
-
         </div>
-
       </div>
     </section>
-
-
     <!-- Testimonials -->
     <section class="testimonials">
-
       <div class="container">
-
         <h2 class="text-center">What Our Customers Say</h2>
-
         <div class="row">
-
           <div class="col-md-4">
             <div class="testimonial">
-              <img src="https://via.placeholder.com/100" alt="Customer 1">
+              <img alt="Customer 1" src="https://via.placeholder.com/100" />
               <blockquote>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, numquam quis quam possimus voluptatem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+                numquam quis quam possimus voluptatem.
               </blockquote>
               <p>- Jane Doe</p>
             </div>
           </div>
-
           <!-- More testimonials -->
-
         </div>
-
       </div>
-
     </section>
-
-
     <!-- How It Works -->
-    <section id="about" class="how-it-works py-5 parallax">
+    <section class="how-it-works py-5 parallax" id="about">
       <div class="container">
         <h2 class="text-center mb-5">How It Works</h2>
-
         <div class="row">
           <div class="col-md-4 text-center">
             <i class="fas fa-3x fa-phone-alt mb-3"></i>
             <h3>Request a Ride</h3>
-            <p>Call or email us your details. We'll confirm availability and pricing.</p>
+            <p>
+              Call or email us your details. We'll confirm availability and
+              pricing.
+            </p>
           </div>
-
           <div class="col-md-4 text-center">
             <i class="fas fa-3x fa-car mb-3"></i>
             <h3>Meet Your Driver</h3>
             <p>Your friendly driver will pick you up at the scheduled time.</p>
           </div>
-
           <div class="col-md-4 text-center">
             <i class="fas fa-3x fa-map-marked-alt mb-3"></i>
             <h3>Enjoy Your Trip</h3>
@@ -153,41 +161,41 @@
         </div>
       </div>
     </section>
-
     <!-- Contact -->
-    <section id="contact" class="contact py-5">
+    <section class="contact py-5" id="contact">
       <div class="container">
         <h2 class="text-center mb-4">Contact Us</h2>
-
-        <!-- Contact Form -->
-
-        <!-- Contact Info -->
+        < !--Contact Form--> < !--Contact Info-->
         <div class="row">
           <div class="col-md-4">
             <h3>Get in Touch</h3>
-            <p><i class="fas fa-phone"></i> +387 ## ### ###</p>
-            <p><i class="fas fa-envelope"></i> <a href="mailto:info@name.com">info@name.com</a></p>
-            <p><i class="fas fa-map-marker-alt"></i> 123 Main St, Mostar 88000, Bosnia and Herzegovina</p>
+            <p><i class="fas fa-phone"></i>+387 ## ### ###</p>
+            <p>
+              <i class="fas fa-envelope"></i
+              ><a href="mailto:info@name.com">info@name.com</a>
+            </p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i>123 Main St, Mostar 88000,
+              Bosnia and Herzegovina
+            </p>
           </div>
         </div>
       </div>
     </section>
-
     <!-- Footer -->
-    <footer class="py-3 ">
+    <footer class="py-3">
       <div class="container">
         <p class="text-center">&copy; AlfaGongGong 2023</p>
       </div>
     </footer>
-
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="./scripts/script.js">
-
-    </script>
-
+    <script
+      charset="utf-8"
+      src="./scripts/script.js"
+      type="text/javascript"
+    ></script>
   </body>
-
 </html>

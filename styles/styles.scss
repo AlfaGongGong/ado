@@ -1,0 +1,323 @@
+// Variables
+$brand-color: #ff3cac;
+$accent-color: #fffb96;
+$bg-color: #fff;
+
+$text-light: #eee;
+$text-dark: #222;
+
+$heading-font: "Rubik", sans-serif;
+$body-font: "Work Sans", sans-serif;
+$accent-font: "Libre Franklin", sans-serif;
+
+// Mixins
+@mixin transition($property) {
+  transition: $property 0.3s ease;
+}
+
+// Global Styles
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $body-font;
+  color: $text-dark;
+  line-height: 1.6;
+
+  p,
+  li,
+  blockquote {
+    font-family: $body-font;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Sections
+section {
+  padding: 5rem 0;
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+// Navbar
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+// Nav Links
+
+.nav-links {
+  li {
+    display: inline-block;
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: $text-dark;
+      padding: 0.75rem 1rem;
+      font-family: $accent-font;
+
+      &.active {
+        color: $brand-color;
+      }
+    }
+  }
+}
+
+// Fade in links on hover
+
+.navbar-nav .nav-item .nav-link {
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+    color: $brand-color;
+    text-decoration: none;
+    transform: scale(1.5);
+  }
+}
+
+// Scale up logo on hover
+.logo:hover {
+  transform: scale(1.1);
+}
+
+// Slide in mobile menu
+.mobile-menu {
+  transform: translateX(-100%);
+
+  &.active {
+    transform: translateX(0);
+  }
+}
+
+// Hero
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: $brand-color;
+  color: $text-light;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-family: $heading-font;
+  }
+
+  p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+  }
+
+  .hero-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 2px solid $brand-color;
+    background-color: $accent-color;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: $accent-font;
+
+    &:hover {
+      background: darken($accent-color, 10%);
+      color: $brand-color;
+    }
+  }
+}
+
+// Animated Blob
+.animate-blob {
+  background: $brand-color;
+
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+
+  background-image: url("/transport/ado/images/herobackground.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  animation: animateBlob 10s infinite;
+}
+@keyframes animateBlob {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+// Why Choose Us
+.why-us {
+  background: $accent-color;
+
+  h2 {
+    font-family: $heading-font;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+      background: $bg-color;
+      text-align: center;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      margin: 1rem;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      font-family: $accent-font;
+
+      img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        font-family: $heading-font;
+      }
+
+      p {
+        line-height: 1.6;
+      }
+    }
+  }
+}
+
+// Testimonials
+.testimonials {
+  background: $bg-color;
+
+  .testimonial {
+    background: $accent-color;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    font-family: $accent-font;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.6;
+
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      opacity: 0.8;
+      margin-top: 1rem;
+    }
+  }
+}
+
+// Contact
+.contact {
+  background: $brand-color;
+  color: $text-light;
+  text-align: center;
+  padding: 5rem 0;
+  font-family: $accent-font;
+  font-size: 1.25rem;
+  line-height: 1.6;
+
+  h2 {
+    font-family: $heading-font;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+
+    // Form fields
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+      padding: 0.75rem;
+      border: none;
+      margin-bottom: 1.5rem;
+      background: darken($bg-color, 5%);
+    }
+    textarea {
+      height: 150px;
+    }
+  }
+}
+
+// Footer
+footer {
+  background: darken($bg-color, 5%);
+  padding: 2rem 0;
+  text-align: center;
+  font-family: $accent-font;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: $text-dark;
+
+  p {
+    opacity: 0.7;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+
+    a {
+      margin: 0 1rem;
+
+      i {
+        color: $text-dark;
+
+        &:hover {
+          color: $brand-color;
+        }
+      }
+    }
+  }
+}
