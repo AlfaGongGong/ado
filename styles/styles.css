@@ -26,6 +26,16 @@ h6 {
   align-items: center;
   padding: 1rem;
 }
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+}
 
 .nav-links li {
   display: inline-block;
@@ -85,6 +95,50 @@ h6 {
 .mobile-menu.active {
   transform: translateX(0);
 }
+@media screen and (max-width: 768px) {
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+  .mobile-menu li {
+    margin: 1rem 0;
+  }
+  .mobile-menu a {
+    font-size: 1.5rem;
+  }
+  .mobile-menu img {
+    width: 100%;
+  }
+}
 
 .hero {
   height: 100vh;
@@ -110,6 +164,31 @@ h6 {
   background-size: cover;
   background-attachment: fixed;
   background-blend-mode: soft-light;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .hero {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 240px) {
+  .hero {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 200px) {
+  .hero {
+    font-size: 0.4rem;
+  }
 }
 
 .hero-heading {
@@ -197,6 +276,28 @@ h6 {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   font-weight: 700;
+  color: #eee;
+  line-height: 1.2;
+}
+@media screen and (max-width: 768px) {
+  .why-us-heading {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .why-us-heading {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .why-us-heading {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 240px) {
+  .why-us-heading {
+    font-size: 0.5rem;
+  }
 }
 
 .card {
@@ -234,6 +335,26 @@ h6 {
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
 }
+@media screen and (max-width: 768px) {
+  .card {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .card {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .card {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 240px) {
+  .card {
+    font-size: 0.5rem;
+  }
+}
 
 .card-img-top {
   width: 100px;
@@ -243,6 +364,30 @@ h6 {
   transition: all 0.3s ease;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border: 3px solid #ff3cac;
+}
+@media screen and (max-width: 768px) {
+  .card-img-top {
+    width: 75px;
+    height: 75px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .card-img-top {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .card-img-top {
+    width: 35px;
+    height: 35px;
+  }
+}
+@media screen and (max-width: 240px) {
+  .card-img-top {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 .card-body {
@@ -308,6 +453,23 @@ h6 {
   background-size: cover;
   background-attachment: fixed;
 }
+@media screen and (max-width: 480px) {
+  .testimonials {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .testimonials {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (max-width: 240px) {
+  .testimonials {
+    margin-top: 0.25rem;
+  }
+}
 
 .testimonial {
   display: flex;
@@ -349,6 +511,26 @@ h6 {
   font-size: 1.25rem;
   line-height: 1.6;
   font-weight: 300;
+}
+@media screen and (max-width: 768px) {
+  .testimonial {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .testimonial {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .testimonial {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 240px) {
+  .testimonial {
+    font-size: 0.5rem;
+  }
 }
 
 .how-it-works {
@@ -399,6 +581,47 @@ h6 {
   color: #ff3cac;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  .how-it-works h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .how-it-works h2 {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .how-it-works h2 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 240px) {
+  .how-it-works h2 {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  i {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  i {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  i {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 240px) {
+  i {
+    font-size: 1.5rem;
+  }
 }
 @keyframes bounce {
   from, 20%, 53%, to {
@@ -452,6 +675,26 @@ h6 {
   transform: translateY(-5px);
   transition: all 0.3s ease;
 }
+@media screen and (max-width: 768px) {
+  .about-card-container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about-card-container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .about-card-container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 240px) {
+  .about-card-container {
+    width: 100%;
+  }
+}
 
 .contact {
   display: flex;
@@ -463,11 +706,8 @@ h6 {
   height: 100vh;
   color: #eee;
   font-family: "Rubik", sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.6;
   padding: 0 2rem;
   transition: all 0.3s ease;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 60, 170, 0.3137254902);
   background-image: linear-gradient(rgba(255, 60, 170, 0.3137254902), rgba(255, 60, 170, 0.3137254902)), url("../images/contact.webp");
   background-size: cover;
@@ -492,91 +732,104 @@ h6 {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
-.contact i {
-  font-size: 3rem;
-  line-height: 1.6;
-  margin: 1rem 1rem;
-  color: #eee;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-}
-.contact p {
-  font-size: 1.25rem;
-  line-height: 1.6;
-  font-weight: 300;
-  margin-bottom: 1rem;
-  color: #eee;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-}
-.contact p:hover {
-  transform: translateY(-5px);
-  transition: all 0.3s ease;
-}
 .contact ul {
   list-style: none;
 }
-
-.social-icons {
+.contact li {
+  margin: 1rem 0;
+  color: #eee;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.contact a {
+  color: #eee;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.contact a:hover {
+  text-decoration: none;
+}
+.contact i {
+  font-size: 3rem;
+  margin-right: 0.5rem;
+  transition: all 0.3s ease;
+}
+.contact .contact-info {
   display: flex;
   flex-direction: column;
-  width: 100%;
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: #eee;
   font-family: "Rubik", sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.6;
+  padding: 0 2rem;
   transition: all 0.3s ease;
 }
-
-.social-icons i.fab.fa-instagram,
-.social-icons i.fab.fa-facebook,
-.social-icons i.fab.fa-twitter {
+.contact .social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #eee;
+  font-family: "Rubik", sans-serif;
+  padding: 0 2rem;
+  transition: all 0.3s ease;
+}
+.contact .social-icons i.fab.fa-instagram,
+.contact .social-icons i.fab.fa-facebook,
+.contact .social-icons i.fab.fa-twitter {
   font-size: 3rem;
   color: #eee;
-  transition: all 0.3s ease;
 }
-
-.social-icons li,
-.social-icons a {
+.contact .social-icons li,
+.contact .social-icons a {
   text-decoration: none;
   color: #eee;
 }
-
-.social-icon li,
-.social-icons a.instagram,
-.social-icons i.fab {
+.contact .social-icon li,
+.contact .social-icons a.instagram,
+.contact .social-icons i.fab {
   margin: 1rem 1rem;
   transition: all 0.3s ease;
 }
-
-.social-icons a.instagram:hover {
-  transform: translateY(-5px);
-  background: linear-gradient(1.45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+.contact .social-icons li:hover,
+.contact .social-icons a.instagram:hover {
+  background: linear-gradient(#f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease;
-  text-decoration: none;
 }
-
-.social-icons a.facebook:hover {
-  transform: translateY(-5px);
-  background: linear-gradient(1.45deg, #3b5998 0%, #364e8a 25%, #273e63 50%, #1d2d4d 75%, #131e35 100%);
+.contact .social-icons li:hover,
+.contact .social-icons a.facebook:hover {
+  background: linear-gradient(#3b5998 0%, #364e8a 25%, #273e63 50%, #1d2d4d 75%, #131e35 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease;
-  text-decoration: none;
 }
-
-.social-icons a.twitter:hover {
-  transform: translateY(-5px);
-  background: linear-gradient(1.45deg, #55acee 0%, #2795e9 25%, #0077b5 50%, #0067a5 75%, #005794 100%);
+.contact .social-icons li:hover,
+.contact .social-icons a.twitter:hover {
+  background: linear-gradient(#2795e9 0%, #0077b5 25%, #0067a5 50%, #005794 75%, #005794 100%);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
   transition: all 0.3s ease;
-  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contact h2 {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .contact h2 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 240px) {
+  .contact h2 {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
