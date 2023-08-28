@@ -280,9 +280,9 @@ h6 {
 .why-us {
   padding: 2rem 0;
   margin: 2rem 0;
+  display: flex;
   width: 100%;
   height: 100vh;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -344,8 +344,6 @@ h6 {
   font-family: $heading-font;
   font-size: 1.25rem;
   line-height: 1.6;
-  height: 100%;
-  width: 100%;
   &:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
@@ -486,6 +484,8 @@ h6 {
 // Testimonials
 .testimonials {
   display: flex;
+  width: 100%;
+  height: 100vh;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
@@ -496,8 +496,6 @@ h6 {
   font-family: $heading-font;
   font-size: 1.25rem;
   line-height: 1.6;
-  height: 100vh;
-  width: 100%;
   background-color: $brand-opaque;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   background-image: linear-gradient($brand-opaque, $brand-opaque),
@@ -513,8 +511,6 @@ h6 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 70%;
-
   background-color: $bg-color;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -607,47 +603,7 @@ h6 {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
   }
-  @media screen and (max-width: 768px) {
-    h2 {
-      font-size: 1.5rem;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    h2 {
-      font-size: 1.25rem;
-    }
-  }
-  @media screen and (max-width: 320px) {
-    h2 {
-      font-size: 1rem;
-    }
-  }
-  @media screen and (max-width: 240px) {
-    h2 {
-      font-size: 0.75rem;
-    }
-  }
-}
-@media screen and (max-width: 768px) {
-  i {
-    font-size: 4rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  i {
-    font-size: 3rem;
-  }
-}
-@media screen and (max-width: 320px) {
-  i {
-    font-size: 2rem;
-  }
-}
-@media screen and (max-width: 240px) {
-  i {
-    font-size: 1.5rem;
-  }
-}
+ 
 
 @-webkit-keyframes bounce {
   from,
@@ -730,7 +686,7 @@ h6 {
 
   justify-content: center;
   text-align: center;
-  width: 70%;
+  
   color: $text-dark;
   font-family: $heading-font;
   font-size: 1.25rem;
