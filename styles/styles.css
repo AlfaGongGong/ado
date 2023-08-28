@@ -165,6 +165,11 @@ h6 {
   background-attachment: fixed;
   background-blend-mode: soft-light;
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 221229b352b882e24574c8debba51fda044f7fc9
 
 .hero-heading {
   font-size: 3rem;
@@ -256,6 +261,11 @@ h6 {
   color: #222;
   line-height: 1.2;
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 221229b352b882e24574c8debba51fda044f7fc9
 
 .card {
   background: #fff;
@@ -280,7 +290,12 @@ h6 {
   font-family: "Rubik", sans-serif;
   font-size: 1.25rem;
   line-height: 1.6;
+<<<<<<< HEAD
   height: 100%;
+=======
+width: 100%;
+height: 100%;
+>>>>>>> 221229b352b882e24574c8debba51fda044f7fc9
 }
 .card:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -298,9 +313,16 @@ h6 {
   border-radius: 50%;
   margin-bottom: 1rem;
   transition: all 0.3s ease;
+<<<<<<< HEAD
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border: 3px solid #ff3cac;
 }
+=======
+  box-shadow: 0 0 10
+    width: 35px;
+    height: 35px;
+  }
+>>>>>>> 221229b352b882e24574c8debba51fda044f7fc9
 
 .card-body {
   font-size: 1.25rem;
@@ -364,14 +386,26 @@ h6 {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+<<<<<<< HEAD
   padding: 2rem;
 }
+=======
+}
+
+
+
+
+>>>>>>> 221229b352b882e24574c8debba51fda044f7fc9
 
 .testimonial {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 221229b352b882e24574c8debba51fda044f7fc9
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -408,6 +442,15 @@ h6 {
   line-height: 1.6;
   font-weight: 300;
 }
+<<<<<<< HEAD
+=======
+
+
+
+
+ 
+
+>>>>>>> 221229b352b882e24574c8debba51fda044f7fc9
 
 .how-it-works {
   margin: 2rem 0;
@@ -458,6 +501,10 @@ h6 {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 221229b352b882e24574c8debba51fda044f7fc9
 @keyframes bounce {
   from, 20%, 53%, to {
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -495,6 +542,10 @@ h6 {
   height: 100%;
   justify-content: center;
   text-align: center;
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 221229b352b882e24574c8debba51fda044f7fc9
   color: #222;
   font-family: "Rubik", sans-serif;
   font-size: 1.25rem;
@@ -629,4 +680,8 @@ h6 {
   -webkit-background-clip: text;
   background-clip: text;
   transition: all 0.3s ease;
+<<<<<<< HEAD
 }/*# sourceMappingURL=styles.css.map */
+=======
+}/*# sourceMappingURL=styles.css.map */
+>>>>>>> 221229b352b882e24574c8debba51fda044f7fc9
