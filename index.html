@@ -181,30 +181,38 @@
           How It Works
         </h2>
         <div class="row">
-          <div class="col-md-4 text-center about-card-container">
-            <i
-              class="fas fa-3x fa-phone-alt animate__animated animate__bounce"
-            ></i>
-            <h2>1</h2>
-            <h3>Request a Ride</h3>
-            <p>
-              Call or email us your details. We'll confirm availability and
-              pricing.
-            </p>
+          <div class="col-md-4">
+            <div class="how-it-works-card">
+              <i
+                class="fas fa-3x fa-phone-alt animate__animated animate__bounce"
+              ></i>
+              <h2>1</h2>
+              <h3>Request a Ride</h3>
+              <p>
+                Call or email us your details. We'll confirm availability and
+                pricing.
+              </p>
+            </div>
           </div>
-          <div class="col-md-4 text- about-card-container">
-            <i class="fas fa-3x fa-car animate__animated animate__bounce"></i>
-            <h2>2</h2>
-            <h3>Meet Your Driver</h3>
-            <p>Your friendly driver will pick you up at the scheduled time.</p>
+          <div class="col-md-4">
+            <div class="how-it-works-card">
+              <i class="fas fa-3x fa-car animate__animated animate__bounce"></i>
+              <h2>2</h2>
+              <h3>Meet Your Driver</h3>
+              <p>
+                Your friendly driver will pick you up at the scheduled time.
+              </p>
+            </div>
           </div>
-          <div class="col-md-4 text-center about-card-container">
-            <i
-              class="fas fa-3x fa-map-marked-alt animate__animated animate__bounce"
-            ></i>
-            <h2>3</h2>
-            <h3>Enjoy Your Trip</h3>
-            <p>Sit back and relax. Pay the driver at your destination.</p>
+          <div class="col-md-4">
+            <div class="how-it-works-card">
+              <i
+                class="fas fa-3x fa-map-marked-alt animate__animated animate__bounce"
+              ></i>
+              <h2>3</h2>
+              <h3>Enjoy Your Trip</h3>
+              <p>Sit back and relax. Pay the driver at your destination.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -218,6 +226,7 @@
 
         <div class="row">
           <div class="col-md-4">
+            <h3 class="contact-heading text-center mb-4">Contact Info</h3>
             <ul class="contact-info">
               <li><i class="fas fa-phone"></i>+387 ## ### ### ##</li>
               <li>
@@ -231,6 +240,9 @@
             </ul>
           </div>
           <div class="col-md-4">
+            <h3 class="contact-heading text-center mb-4">
+              Folow us on social media
+            </h3>
             <ul class="social-icons">
               <li>
                 <a href="#" class="instagram"
@@ -250,53 +262,42 @@
             </ul>
           </div>
           <div class="col-md-4">
-            <form class="contact-form">
-              <div class="form-group">
+            <h3 class="contact-heading text-center mb-4">
+              Leave us Your review
+            </h3>
+            <form
+              action=""
+              class="review-form"
+              method="post"
+              id="review-form"
+              novalidate
+            >
+              <span class="form-label">
                 <input
-                  class="form-control"
-                  id="name"
                   type="text"
-                  placeholder="Name"
-                  required
-                  data-validation-required-message="Please enter your name."
+                  name="name"
+                  id="name"
+                  placeholder="Your Name / Nickname"
                 />
-                <p class="help-block text-danger"></p>
+              </span>
+              <span class="form-label">
                 <input
-                  class="form-control"
-                  id="email"
                   type="email"
-                  placeholder="Email"
-                  required
-                  data-validation-required-message="Please enter your email address."
+                  name="email"
+                  id="email"
+                  placeholder="Your Email"
                 />
-                <p class="help-block text-danger"></p>
-                <input
-                  class="form-control"
-                  id="phone"
-                  type="tel"
-                  placeholder="Phone"
-                  required
-                  data-validation-required-message="Please enter your phone number."
-                />
-                <p class="help-block text-danger"></p>
-
-                <div class="form-group">
-                  <textarea
-                    class="form-control"
-                    id="message"
-                    rows="5"
-                    placeholder="Message"
-                    required
-                    data-validation-required-message="Please enter a message."
-                  ></textarea>
-                  <p class="help-block text-danger"></p>
-                  <div id="success"></div>
-                  <button class="btn" id="sendMessageButton" type="submit">
-                    Send Message
-                    <i class="fas fa-paper-plane"></i>
-                  </button>
-                </div>
-              </div>
+              </span>
+              <span class="form-label">
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Your Review"
+                ></textarea>
+              </span>
+              <span class="form-btn">
+                <button type="submit" class="submit-btn">Submit</button>
+              </span>
             </form>
           </div>
         </div>
