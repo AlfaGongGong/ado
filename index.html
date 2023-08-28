@@ -66,51 +66,68 @@
       </div>
     </nav>
     <!-- Hero -->
-    <section class="hero parallax">
-      <h1>Za brata šminka i fenseraj <br />(inaèe ovdje ide naziv firme)</h1>
-      <div class="container animate-blob">
-        <p>Connecting you from Mostar to your destination</p>
-        <button class="hero-btn" data-target="#contact" type="button">
-          Contact for a Ride
-        </button>
-      </div>
+
+    <section id="home" class="hero" data-target="#home">
+      <h1 class="hero-heading text-center text-uppercase">
+        Za brata šminka i fenseraj <br />(inaèe ovdje ide naziv firme)
+      </h1>
+      <p class="hero-text text-center">
+        Connecting you from Mostar to your destination
+      </p>
+      <button
+        class="hero-btn animate__animated animate__pulse"
+        data-target="#contact"
+        type="button"
+      >
+        Contact for a Ride
+      </button>
     </section>
 
     <!-- Why Choose Us -->
 
-    <section class="why-us" id="why-us">
-      <div class="container">
-        <h2 class="text-center mb-4">Why Choose Us?</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card animated fadeInLeft">
-              <img class="card-img-top" src="./images/affordable.png" />
-              <div class="card-body">
-                <h5 class="card-title">Affordable</h5>
-                <p class="card-text">Competitive and fair pricing.</p>
-              </div>
+    <section class="why-us py-5" id="why-us">
+      <h2 class="why-us-heading mb-4 text-center text-uppercase">
+        Why Choose Us?
+      </h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="cards"></div>
+          <div class="card">
+            <img
+              class="card-img-top animate__animated"
+              src="./images/affordable.png"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-centre">Affordable</h5>
+              <p class="card-text text-centre">Competitive and fair pricing.</p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card animated fadeInDown">
-              <img class="card-img-top" src="./images/safe.png" />
-              <div class="card-body">
-                <h5 class="card-title">Reliable</h5>
-                <p class="card-text">Timely pickups and skilled drivers.</p>
-              </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              class="card-img-top animate__animated"
+              src="./images/safe.png"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-center text-uppercase">Reliable</h5>
+              <p class="card-text text-center">
+                Timely pickups and skilled drivers.
+              </p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card animated fadeInRight">
-              <img class="card-img-top" src="./images/chair_1053038.png" /><i
-                class
-              ></i>
-              <div class="card-body">
-                <h5 class="card-title">Comfortable</h5>
-                <p class="card-text">
-                  Relaxing rides in clean, spacious vehicles.
-                </p>
-              </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              class="card-img-top animate__animated"
+              src="./images/chair_1053038.png"
+            /><i class></i>
+            <div class="card-body">
+              <h5 class="card- text-centre text-uppercase">Comfortable</h5>
+              <p class="card-text text-center">
+                Relaxing rides in clean, spacious vehicle.
+              </p>
             </div>
           </div>
         </div>
@@ -119,11 +136,33 @@
     <!-- Testimonials -->
     <section class="testimonials">
       <div class="container">
-        <h2 class="text-center">What Our Customers Say</h2>
+        <h2 class="testimonial-heading text-center text-uppercase">
+          What Our Customers Say
+        </h2>
         <div class="row">
           <div class="col-md-4">
             <div class="testimonial">
-              <img alt="Customer 1" src="https://via.placeholder.com/100" />
+              <img alt="Customer 1" src="./images/avatarmale.jpg" />
+              <blockquote>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+                numquam quis quam possimus voluptatem.
+              </blockquote>
+              <p>- John Doe</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial">
+              <img alt="Customer 1" src="./images/avatarfemale.jpg" />
+              <blockquote>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+                numquam quis quam possimus voluptatem.
+              </blockquote>
+              <p>- Jane Doe</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial">
+              <img alt="Customer 1" src="./images/avatarfemale.jpg" />
               <blockquote>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
                 numquam quis quam possimus voluptatem.
@@ -136,25 +175,34 @@
       </div>
     </section>
     <!-- How It Works -->
-    <section class="how-it-works py-5 parallax" id="about">
+    <section class="how-it-works py-5" id="about">
       <div class="container">
-        <h2 class="text-center mb-5">How It Works</h2>
+        <h2 class="how-it-works-heading text-center text-uppercase mb-5">
+          How It Works
+        </h2>
         <div class="row">
-          <div class="col-md-4 text-center">
-            <i class="fas fa-3x fa-phone-alt mb-3"></i>
+          <div class="col-md-4 text-center about-card-container">
+            <i
+              class="fas fa-3x fa-phone-alt animate__animated animate__bounce"
+            ></i>
+            <h2>1</h2>
             <h3>Request a Ride</h3>
             <p>
               Call or email us your details. We'll confirm availability and
               pricing.
             </p>
           </div>
-          <div class="col-md-4 text-center">
-            <i class="fas fa-3x fa-car mb-3"></i>
+          <div class="col-md-4 text- about-card-container">
+            <i class="fas fa-3x fa-car animate__animated animate__bounce"></i>
+            <h2>2</h2>
             <h3>Meet Your Driver</h3>
             <p>Your friendly driver will pick you up at the scheduled time.</p>
           </div>
-          <div class="col-md-4 text-center">
-            <i class="fas fa-3x fa-map-marked-alt mb-3"></i>
+          <div class="col-md-4 text-center about-card-container">
+            <i
+              class="fas fa-3x fa-map-marked-alt animate__animated animate__bounce"
+            ></i>
+            <h2>3</h2>
             <h3>Enjoy Your Trip</h3>
             <p>Sit back and relax. Pay the driver at your destination.</p>
           </div>
@@ -165,7 +213,7 @@
     <section class="contact py-5" id="contact">
       <div class="container">
         <h2 class="text-center mb-4">Contact Us</h2>
-        < !--Contact Form--> < !--Contact Info-->
+
         <div class="row">
           <div class="col-md-4">
             <h3>Get in Touch</h3>

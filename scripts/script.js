@@ -1,12 +1,4 @@
 const parallax = document.querySelector(".parallax");
-const animatedElement = document.querySelector(".animated");
-
-animateEntrance = () => {
-
-  animatedElement.classList.add("fadeInright");
-
-};
-animatedElement.addEventListener('scroll', animateEntrance);
 
 function parallaxEffect() {
   // Get current scroll position
@@ -19,3 +11,23 @@ window.addEventListener("load", function () {
   parallaxEffect();
 });
 window.addEventListener("scroll", parallaxEffect);
+
+// why us cards image animation
+const cards = document.querySelectorAll(".card");
+
+function cardAnimation() {
+  cards.forEach((card) => {
+    const cardImage = card.querySelector(".card-img-top");
+    card.addEventListener("mouseenter", function () {
+      cardImage.classList.add("animate__flip");
+    });
+
+    card.addEventListener("mouseleave", function () {
+      cardImage.classList.remove("animate__flip");
+    });
+  });
+}
+
+window.addEventListener("load", function () {
+  cardAnimation();
+});
