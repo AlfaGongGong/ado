@@ -198,21 +198,7 @@ h6 {
   background-size: cover;
   background-attachment: fixed;
   background-blend-mode: soft-light;
-  @media screen and (max-width: 768px) {
-    font-size: 1rem;
-  }
-  @media screen and (max-width: 480px) {
-    font-size: 1rem;
-  }
-  @media screen and (max-width: 320px) {
-    font-size: 0.75rem;
-  }
-  @media screen and (max-width: 240px) {
-    font-size: 0.5rem;
-  }
-  @media screen and (max-width: 200px) {
-    font-size: 0.4rem;
-  }
+ 
 }
 
 .hero-heading {
@@ -331,18 +317,7 @@ h6 {
   font-weight: 700;
   color: $text-light;
   line-height: 1.2;
-  @media screen and (max-width: 768px) {
-    font-size: 1.5rem;
-  }
-  @media screen and (max-width: 480px) {
-    font-size: 1.25rem;
-  }
-  @media screen and (max-width: 320px) {
-    font-size: 0.75rem;
-  }
-  @media screen and (max-width: 240px) {
-    font-size: 0.5rem;
-  }
+
 }
 
 .card {
@@ -380,18 +355,7 @@ h6 {
       transition: all 0.3s ease-in-out;
     }
   }
-  @media screen and (max-width: 768px) {
-    font-size: 1rem;
-  }
-  @media screen and (max-width: 480px) {
-    font-size: 1rem;
-  }
-  @media screen and (max-width: 320px) {
-    font-size: 0.75rem;
-  }
-  @media screen and (max-width: 240px) {
-    font-size: 0.5rem;
-  }
+
 }
 
 .card-img-top {
@@ -402,22 +366,7 @@ h6 {
   transition: all 0.3s ease;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border: 3px solid $brand-color;
-  @media screen and (max-width: 768px) {
-    width: 75px;
-    height: 75px;
-  }
-  @media screen and (max-width: 480px) {
-    width: 50px;
-    height: 50px;
-  }
-  @media screen and (max-width: 320px) {
-    width: 35px;
-    height: 35px;
-  }
-  @media screen and (max-width: 240px) {
-    width: 25px;
-    height: 25px;
-  }
+
 }
 .card-body {
   font-size: 1.25rem;
@@ -557,17 +506,7 @@ h6 {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  @media screen and (max-width: 480px) {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  @media screen and (max-width: 320px) {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-  @media screen and (max-width: 240px) {
-    margin-top: 0.25rem;
-  }
+
 }
 .testimonial {
   display: flex;
@@ -611,18 +550,7 @@ h6 {
     line-height: 1.6;
     font-weight: 300;
   }
-  @media screen and (max-width: 768px) {
-    font-size: 1rem;
-  }
-  @media screen and (max-width: 480px) {
-    font-size: 1rem;
-  }
-  @media screen and (max-width: 320px) {
-    font-size: 0.75rem;
-  }
-  @media screen and (max-width: 240px) {
-    font-size: 0.5rem;
-  }
+
 }
 
 // About
@@ -735,20 +663,7 @@ h6 {
   40%,
   43% {
     -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
-    transform: translate3d(0, -30px, 0) scaleY(1.1);
-  }
-
-  70% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
-    transform: translate3d(0, -15px, 0) scaleY(1.05);
-  }
-
-  80% {
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timingunction: cubic-bezier(0.215, 0.61, 0.355, 1);
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     -webkit-transform: translate3d(0, 0, 0) scaleY(0.95);
     transform: translate3d(0, 0, 0) scaleY(0.95);
@@ -831,18 +746,7 @@ h6 {
     transform: translateY(-5px);
     transition: all 0.3s ease;
   }
-  @media screen and (max-width: 768px) {
-    width: 90%;
-  }
-  @media screen and (max-width: 480px) {
-    width: 100%;
-  }
-  @media screen and (max-width: 320px) {
-    width: 100%;
-  }
-  @media screen and (max-width: 240px) {
-    width: 100%;
-  }
+
 }
 // Contact
 .contact {
@@ -986,24 +890,6 @@ h6 {
     background-clip: text;
     transition: all 0.3s ease;
   }
-  @media screen and (max-width: 768px) {
-    h2 {
-      font-size: 1.5rem;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    h2 {
-      font-size: 1.25rem;
-    }
-  }
-  @media screen and (max-width: 320px) {
-    h2 {
-      font-size: 1rem;
-    }
-  }
-  @media screen and (max-width: 240px) {
-    h2 {
-      font-size: 1rem;
-    }
+
   }
 }
