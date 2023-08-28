@@ -4,7 +4,14 @@ $accent-color: #fffb96;
 $brand-opaque: #ff3caa50;
 $accent-opaque: #fffb9650;
 $bg-color: #fff;
-
+$instagram-color: linear-gradient(
+  #405de6,
+  #5851db,
+  #833ab4,
+  #c13584,
+  #e1306c,
+  #fd1d1d
+);
 $text-light: #eee;
 $text-dark: #222;
 
@@ -478,18 +485,7 @@ h6 {
   &:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   }
-  @media (min-width: 768px) {
-    font-size: 1.5rem;
-  }
-  @media (min-width: 992px) {
-    font-size: 1.75rem;
-  }
-  @media (min-width: 1200px) {
-    font-size: 2rem;
-  }
-  @media (min-width: 1600px) {
-    font-size: 2.25rem;
-  }
+
   img {
     width: 100px;
     height: 100px;
@@ -678,68 +674,176 @@ h6 {
 }
 // Contact
 .contact {
-  background: $brand-color;
-  color: $text-light;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 5rem 0;
-  font-family: $accent-font;
+  width: 100%;
+  height: 100vh;
+  color: $text-light;
+  font-family: $heading-font;
   font-size: 1.25rem;
   line-height: 1.6;
-
+  padding: 0 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: $brand-opaque;
+  background-image: linear-gradient($brand-opaque, $brand-opaque),
+    url("../images/contact.webp");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
   h2 {
-    font-family: $heading-font;
     font-size: 2rem;
+    line-height: 1.6;
+    font-weight: 300;
     margin-bottom: 1rem;
+    color: $text-light;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
   }
-
-  .contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-
-    // Form fields
-    input,
-    textarea {
-      display: block;
-      width: 100%;
-      padding: 0.75rem;
-      border: none;
-      margin-bottom: 1.5rem;
-      background: darken($bg-color, 5%);
-    }
-    textarea {
-      height: 150px;
+  h3 {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    font-weight: 300;
+    color: $text-light;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  i {
+    font-size: 3rem;
+    line-height: 1.6;
+    margin: 1rem 1rem;
+    color: $text-light;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: $text-light;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    &:hover {
+      transform: translateY(-5px);
+      transition: all 0.3s ease;
     }
   }
+  ul {
+    list-style: none;
+  }
+  li {
+    font-family: $heading-font;
+    
+    font-size: 1.25rem;
+    line-height: 1.6;
+    font-weight: 300;
+    margin: 1rem;
+    color: $text-light;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+
+}
+.social-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  color: $text-light;
+  font-family: $heading-font;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  padding: 0 2rem;
+  transition: all 0.3s ease;
+}
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: $heading-font;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  transition: all 0.3s ease;
 }
 
-// Footer
-footer {
-  background: darken($bg-color, 5%);
-  padding: 2rem 0;
-  text-align: center;
-  font-family: $accent-font;
-  font-size: 1.25rem;
-  line-height: 1.6;
-  color: $text-dark;
+.social-icons i.fab.fa-instagram,
+.social-icons i.fab.fa-facebook,
+.social-icons i.fab.fa-twitter {
+  font-size: 3rem;
+  color: $text-light;
+  transition: all 0.3s ease;
+}
 
-  p {
-    opacity: 0.7;
-  }
+.social-icons li,
+.social-icons a {
+  text-decoration: none;
+  color: $text-light;
+}
+.social-icon li,
+.social-icons a.instagram,
+.social-icons i.fab {
+  margin: 1rem 1rem;
+  transition: all 0.3s ease;
+}
 
-  .social-links {
-    display: flex;
-    justify-content: center;
+.social-icons a.instagram:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(
+    1.45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
 
-    a {
-      margin: 0 1rem;
+.social-icons a.facebook:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(
+    1.45deg,
+    #3b5998 0%,
+    #364e8a 25%,
+    #273e63 50%,
+    #1d2d4d 75%,
+    #131e35 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
 
-      i {
-        color: $text-dark;
-
-        &:hover {
-          color: $brand-color;
-        }
-      }
-    }
-  }
+.social-icons a.twitter:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(
+    1.45deg,
+    #55acee 0%,
+    #2795e9 25%,
+    #0077b5 50%,
+    #0067a5 75%,
+    #005794 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
