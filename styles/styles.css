@@ -256,9 +256,71 @@ h6 {
   margin: 2rem auto;
 }
 
-.why-us-heading {
+@media screen and (min-width: 760px) {
+
+  .why-us,
+  .how-it-works-section,
+  .testimonials-section,
+  .contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+  }
+
+  .why-us-heading h2,
+  .how-it-works-heading h2,
+  .testimonial-heading h2,
+  .contact-heading h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .why-us-card,
+  .testimonial-card,
+  .how-it-works-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+    width: 100%;
+    text-align: center;
+    height: 500px;
+    font-size: 3rem;
+
+  }
+
+  .why-us-card .card-text,
+  .testimonial-card p,
+  .testimonial-card h3,
+  .testimonial-card blockquote,
+  .how-it-works-card p,
+  .how-it-works-card h3 {
+    font-size: 2.5rem;
+  }
+
+  .why-us-card .card-title,
+  .testimonial-card h2,
+  .how-it-works-card h2 {
+    font-size: 3rem;
+  }
+}
+
+.why-us-heading,
+.how-it-works-heading,
+.testimonial-heading,
+.contact-heading {
   font-family: "Rubik", sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 3rem;
   text-align: center;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -305,9 +367,9 @@ h6 {
   transition: all 0.3s ease-in-out;
 }
 
-.card-img-top {
-  width: 200px;
-  height: 200px;
+.why-us-card i.card-img-top {
+  width: 100%;
+  height: 50%;
   border-radius: 50%;
   margin-bottom: 1rem;
   transition: all 0.3s ease;
