@@ -13,7 +13,7 @@ window.addEventListener("load", function () {
 window.addEventListener("scroll", parallaxEffect);
 
 // why us cards image animation
-const cards = document.querySelectorAll(".card");
+const cards = document.querySelectorAll(".why-us-card");
 
 function cardAnimation() {
   cards.forEach((card) => {

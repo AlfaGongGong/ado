@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Ado car brat</title>
     <!-- Bootstrap CSS -->
     <link
@@ -22,26 +27,27 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Eczar&family=Gentium+Plus&family=Libre+Baskerville&family=Libre+Franklin&family=Proza+Libre&family=Rubik&family=Taviraj&family=Trirong&family=Work+Sans&display=swap"
       rel="stylesheet"
     />
-    <!-- Custom CSS-->
+    <!-- Custom CSS -->
     <link href="./styles/styles.css" rel="stylesheet" />
   </head>
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-      <img
-        alt="Logo"
-        src="https://via.placeholder.com/100x30.png?text=Logo"
-        class="logo"
-      />
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"
+        ><img
+          alt="Logo"
+          src="https://via.placeholder.com/100x30.png?text=Logo"
+          class="img-fluid logo"
+      /></a>
       <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
-        class="navbar-toggler"
-        data-target="#navbarNav"
-        data-toggle="collapse"
-        type="button"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -49,101 +55,106 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#home"
-              ><i class="fa-solid fa-house" style="color: #ff3cac"></i>Home
-            </a>
+              ><i class="fa-solid fa-house" style="color: #ff3cac"></i>Home</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about"
-              ><i class="fa-solid fa-user" style="color: #ff3cac"></i>About
-            </a>
+              ><i class="fa-solid fa-user" style="color: #ff3cac"></i>About</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact"
-              ><i class="fa-solid fa-phone" style="color: #ff3cac"></i>Contact
-            </a>
+              ><i class="fa-solid fa-phone" style="color: #ff3cac"></i
+              >Contact</a
+            >
           </li>
         </ul>
       </div>
     </nav>
-    <!-- Hero -->
 
+    <!-- Hero -->
     <section id="home" class="hero" data-target="#home">
-      <h1 class="hero-heading text-center text-uppercase">
-        Za brata šminka i fenseraj <br />(inaèe ovdje ide naziv firme)
-      </h1>
-      <p class="hero-text text-center">
-        Connecting you from Mostar to your destination
-      </p>
-      <button
-        class="hero-btn animate__animated animate__pulse"
-        data-target="#contact"
-        type="button"
-      >
-        Contact for a Ride
-      </button>
+      <div class="container">
+        <h1 class="hero-heading text-center text-uppercase">
+          Za brata šminka i fenseraj <br />(ina?e ovdje ide naziv firme)
+        </h1>
+        <p class="hero-text text-center">
+          Connecting you from Mostar to your destination
+        </p>
+        <button
+          class="btn btn-primary btn-lg hero-btn animate__animated animate__pulse"
+          data-target="#contact"
+          type="button"
+        >
+          Contact for a Ride
+        </button>
+      </div>
     </section>
 
     <!-- Why Choose Us -->
-
-    <section class="why-us py-5" id="why-us">
-      <h2 class="why-us-heading mb-4 text-center text-uppercase">
-        Why Choose Us?
-      </h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="cards"></div>
-          <div class="card">
-            <img
-              class="card-img-top animate__animated"
-              src="./images/affordable.png"
-            />
-            <div class="card-body">
-              <h5 class="card-title text-centre">Affordable</h5>
-              <p class="card-text text-centre">Competitive and fair pricing.</p>
+    <section class="why-us" id="why-us">
+      <div class="container-fluid">
+        <h2 class="why-us-heading mb-4 text-center text-uppercase">
+          Why Choose Us?
+        </h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="why-us-card">
+              <img
+                class="card-img-top animate__animated"
+                src="./images/affordable.png"
+                alt="Affordable"
+              />
+              <h5 class="card-title text-center">Affordable</h5>
+              <p class="card-text text-center">Competitive and fair pricing.</p>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img
-              class="card-img-top animate__animated"
-              src="./images/safe.png"
-            />
-            <div class="card-body">
+          <div class="col-md-4">
+            <div class="why-us-card">
+              <img
+                class="card-img-top animate__animated"
+                src="./images/safe.png"
+                alt="Safe"
+              />
               <h5 class="card-title text-center text-uppercase">Reliable</h5>
               <p class="card-text text-center">
                 Timely pickups and skilled drivers.
               </p>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img
-              class="card-img-top animate__animated"
-              src="./images/chair_1053038.png"
-            /><i class></i>
-            <div class="card-body">
-              <h5 class="card- text-centre text-uppercase">Comfortable</h5>
+          <div class="col-md-4">
+            <div class="why-us-card">
+              <img
+                class="card-img-top animate__animated"
+                src="./images/chair_1053038.png"
+                alt="Comfortable"
+              />
+              <h5 class="card-title text-center text-uppercase">Comfortable</h5>
               <p class="card-text text-center">
-                Relaxing rides in clean, spacious vehicle.
+                Relaxing rides in clean, spacious vehicles.
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Testimonials -->
-    <section class="testimonials">
-      <div class="container">
+    <section class="testimonials-section">
+      <div class="container-fluid">
         <h2 class="testimonial-heading text-center text-uppercase">
           What Our Customers Say
         </h2>
         <div class="row">
           <div class="col-md-4">
-            <div class="testimonial">
-              <img alt="Customer 1" src="./images/avatarmale.jpg" />
-              <blockquote>
+            <div class="testimonial-card">
+              <img
+                alt="Customer 1"
+                src="./images/avatarmale.jpg"
+                class="testimonial-img-top"
+              />
+              <blockquote class="testimonial-blockquote">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
                 numquam quis quam possimus voluptatem.
               </blockquote>
@@ -151,37 +162,45 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="testimonial">
-              <img alt="Customer 1" src="./images/avatarfemale.jpg" />
-              <blockquote>
+            <div class="testimonial-card">
+              <img
+                alt="Customer 2"
+                src="./images/avatarmale.jpg"
+                class="testimonial-img-top"
+              />
+              <blockquote class="testimonial-blockquote">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
                 numquam quis quam possimus voluptatem.
               </blockquote>
-              <p>- Jane Doe</p>
+              <p>- John Doe</p>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="testimonial">
-              <img alt="Customer 1" src="./images/avatarfemale.jpg" />
-              <blockquote>
+            <div class="testimonial-card">
+              <img
+                alt="Customer 2"
+                src="./images/avatarmale.jpg"
+                class="testimonial-img-top"
+              />
+              <blockquote class="testimonial-blockquote">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
                 numquam quis quam possimus voluptatem.
               </blockquote>
-              <p>- Jane Doe</p>
+              <p>- John Doe</p>
             </div>
           </div>
-          <!-- More testimonials -->
         </div>
       </div>
     </section>
+
     <!-- How It Works -->
-    <section class="how-it-works py-5" id="about">
-      <div class="container">
+    <section class="how-it-works-section" id="about">
+      <div class="container-fluid">
         <h2 class="how-it-works-heading text-center text-uppercase mb-5">
           How It Works
         </h2>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 text-center">
             <div class="how-it-works-card">
               <i
                 class="fas fa-3x fa-phone-alt animate__animated animate__bounce"
@@ -194,7 +213,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 text-center">
             <div class="how-it-works-card">
               <i class="fas fa-3x fa-car animate__animated animate__bounce"></i>
               <h2>2</h2>
@@ -204,7 +223,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 text-center">
             <div class="how-it-works-card">
               <i
                 class="fas fa-3x fa-map-marked-alt animate__animated animate__bounce"
@@ -217,16 +236,15 @@
         </div>
       </div>
     </section>
+
     <!-- Contact -->
     <section class="contact py-5" id="contact">
       <div class="container">
         <h2 class="contact-heading text-center text-uppercase mb-4">
           Contact Us
         </h2>
-
         <div class="row">
           <div class="col-md-4">
-            <h3 class="contact-heading text-center mb-4">Contact Info</h3>
             <ul class="contact-info">
               <li><i class="fas fa-phone"></i>+387 ## ### ### ##</li>
               <li>
@@ -240,9 +258,6 @@
             </ul>
           </div>
           <div class="col-md-4">
-            <h3 class="contact-heading text-center mb-4">
-              Folow us on social media
-            </h3>
             <ul class="social-icons">
               <li>
                 <a href="#" class="instagram"
@@ -262,53 +277,70 @@
             </ul>
           </div>
           <div class="col-md-4">
-            <h3 class="contact-heading text-center mb-4">
-              Leave us Your review
-            </h3>
-            <form
-              action=""
-              class="review-form"
-              method="post"
-              id="review-form"
-              novalidate
-            >
-              <span class="form-label">
+            <form class="contact-form">
+              <div class="form-group">
                 <input
-                  type="text"
-                  name="name"
+                  class="form-control"
                   id="name"
-                  placeholder="Your Name / Nickname"
+                  type="text"
+                  placeholder="Name"
+                  required
+                  data-validation-required-message="Please enter your name."
                 />
-              </span>
-              <span class="form-label">
+                <p class="help-block text-danger"></p>
                 <input
-                  type="email"
-                  name="email"
+                  class="form-control"
                   id="email"
-                  placeholder="Your Email"
+                  type="email"
+                  placeholder="Email"
+                  required
+                  data-validation-required-message="Please enter your email address."
                 />
-              </span>
-              <span class="form-label">
-                <textarea
-                  name="message"
-                  id="message"
-                  placeholder="Your Review"
-                ></textarea>
-              </span>
-              <span class="form-btn">
-                <button type="submit" class="submit-btn">Submit</button>
-              </span>
+                <p class="help-block text-danger"></p>
+                <input
+                  class="form-control"
+                  id="phone"
+                  type="tel"
+                  placeholder="Phone"
+                  required
+                  data-validation-required-message="Please enter your phone number."
+                />
+                <p class="help-block text-danger"></p>
+
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="5"
+                    placeholder="Message"
+                    required
+                    data-validation-required-message="Please enter a message."
+                  ></textarea>
+                  <p class="help-block text-danger"></p>
+                  <div id="success"></div>
+                  <button
+                    class="btn btn-primary text-center"
+                    id="sendMessageButton"
+                    type="submit"
+                  >
+                    Send Review
+                    <i class="fas fa-paper-plane"></i>
+                  </button>
+                </div>
+              </div>
             </form>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Footer -->
     <footer class="py-3">
       <div class="container">
         <p class="text-center">&copy; AlfaGongGong 2023</p>
       </div>
     </footer>
+
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
