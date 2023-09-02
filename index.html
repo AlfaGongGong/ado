@@ -35,63 +35,62 @@
 
   <body>
     <!-- Navbar -->
-    <section class="navbar sticky-top mb-3">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
-        <img
-          src="./images/logo.png"
-          alt="logo"
-          style="width: 100px; height: 100px"
-          class="d-inline-block align-top"
-        />
-        <button
-          class="btn-custom hero-btn animate__animated animate__pulse"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#home"
-                ><i class="fa-solid fa-house" style="color: #ff3cac"></i>Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about"
-                ><i class="fa-solid fa-user" style="color: #ff3cac"></i>About</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact"
-                ><i class="fa-solid fa-phone" style="color: #ff3cac"></i
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </section>
+    <nav class="navbar navbar-expand-lg sticky-top mb-3">
+      <img
+        src="./images/logo.png"
+        alt="logo"
+        style="width: 100px; height: 100px"
+        class="d-inline-block align-top animate__animated animate__rollIn"
+      />
+      <button
+        class="navbar-toggler hero-btn animate__animated animate__pulse"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home"
+              ><i class="fa-solid fa-house" style="color: #ff3cac"></i>Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about"
+              ><i class="fa-solid fa-user" style="color: #ff3cac"></i>About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"
+              ><i class="fa-solid fa-phone" style="color: #ff3cac"></i
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <!-- Hero -->
-    <section id="home" class="hero mt-3 mb-3" data-target="#home">
+    <section id="home" class="hero mt-3 mb-3 md-" data-target="#home">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <h1 class="hero-heading text-center text-uppercase">
-              Target transport
+          <div class="col-md-6 col-sm-12">
+            <h1 class="hero-heading text-center text-uppercase fs-4 fs-md-5">
+              We Are <br />
+              Target transport <em class="text-muted copy"> &copy;</em>
             </h1>
-            <p class="hero-text text-center">
+            <p class="hero-text text-center fs-5">
               Connecting you from Mostar to your destination
             </p>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-12">
             <button
-              class="btn-lg hero-btn animate__animated animate__pulse"
+              class="btn-lg hero-btn animate__animated animate__pulse fs-5"
               data-target="#contact"
               type="button"
             >
@@ -109,7 +108,7 @@
           Why Choose Us?
         </h1>
         <div class="row">
-          <div class="col-md-4 mt-3 mb-3">
+          <div class="col-md-4 col-sm-12 mt-3 mb-3">
             <div class="why-us-card">
               <img
                 class="card-img-top animate__animated"
@@ -120,7 +119,7 @@
               <p class="card-text text-center">Competitive and fair pricing.</p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-12 mt-3 mb-3">
             <div class="why-us-card">
               <img
                 class="card-img-top animate__animated"
@@ -133,7 +132,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4 mt-3 mb-3">
+          <div class="col-md-4 col-sm-12 mt-3 mb-3">
             <div class="why-us-card">
               <img
                 class="card-img-top animate__animated"
@@ -157,7 +156,7 @@
           What Our Customers Say
         </h1>
         <div class="row">
-          <div class="col-md-4 mt-3 mb-3">
+          <div class="col-md-4 col-sm-12 mt-3 mb-3">
             <div class="testimonial-card">
               <img
                 alt="Customer 1"
@@ -171,7 +170,7 @@
               <p>- John Doe</p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-12 mt-3 mb-3">
             <div class="testimonial-card">
               <img
                 alt="Customer 2"
@@ -185,7 +184,7 @@
               <p>- John Doe</p>
             </div>
           </div>
-          <div class="col-md-4 mt-3 mb-3">
+          <div class="col-md-4 col-sm-12 mt-3 mb-3">
             <div class="testimonial-card">
               <img
                 alt="Customer 2"
@@ -210,7 +209,7 @@
           How It Works
         </h1>
         <div class="row">
-          <div class="col-md-4 text-center mt-3 mb-3">
+          <div class="col-md-4 col-sm-12 text-center mt-3 mb-3">
             <div class="how-it-works-card">
               <i
                 class="fas fa-3x fa-phone-alt animate__animated animate__bounce"
@@ -223,7 +222,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 col-sm-12 text-center">
             <div class="how-it-works-card">
               <i class="fas fa-3x fa-car animate__animated animate__bounce"></i>
               <h2>2</h2>
@@ -233,7 +232,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4 text-center mt-3 mb-3">
+          <div class="col-md-4 col-sm-12 4 mt-3 mb-3">
             <div class="how-it-works-card">
               <i
                 class="fas fa-3x fa-map-marked-alt animate__animated animate__bounce"
@@ -256,7 +255,7 @@
           Contact Us
         </h1>
         <div class="row">
-          <div class="col-md-4 mt-3 mb-3">
+          <div class="col-md-4 col-sm-12 col-xl-4 mt-3 mb-3">
             <ul class="contact-info">
               <li><i class="fas fa-phone"></i>+387 ## ### ### ##</li>
               <li>
@@ -269,7 +268,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-4 mt-3 mb-3">
+          <div class="col-md-4 col-sm-12 col-xl-4 mt-3 mb-3">
             <ul class="social-icons">
               <li>
                 <a href="#" class="instagram"
@@ -288,79 +287,79 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-4 mt-3 mb-3">
-            <form class="contact-form">
-              <label for="form-group">All Fields With * Are Required</label>
-              <div class="form-group" id="form-group">
-                <label for="name">Enter Your Name</label>
-                <input
-                  class="form-control"
-                  id="name"
-                  type="text"
-                  placeholder="*"
-                  required
-                  data-validation-required-message="Please enter your name."
-                />
-                <p class="help-block text-danger"></p>
-                <label for="email">Enter Your Email</label>
-                <input
-                  class="form-control"
-                  id="email"
-                  type="email"
-                  placeholder="*"
-                  required
-                  data-validation-required-message="Please enter your email address."
-                />
-                <p class="help-block text-danger"></p>
-                <label for="image" class="form-label"
-                  >Upload your image (optional)
-                </label>
-                <input
-                  class="form-control mb-3"
-                  id="image"
-                  type="file"
-                  name="image"
-                  accept="image/*"
-                  max-size="100px x 100px"
-                  placeholder="Upload Your Image"
-                  file-upload-button-text="Upload"
-                  data-validation-file-accept="image/*"
-                  data-validation-file-max-size="100px x 100px"
-                  data-validation-file-extension="png jpg jpeg"
-                  data-validation-file-button-type="button"
-                />
-                <label for="message">Enter Your Review</label>
-                <textarea
-                  class="form-control"
-                  id="message"
-                  rows="5"
-                  placeholder="Message"
-                  required
-                  data-validation-required-message="Please enter a message."
-                ></textarea>
-                <p class="help-block text-danger"></p>
-                <button
-                  class="btn-lg hero-btn animate__animated animate__pulse"
-                  id="sendMessageButton"
-                  type="button"
-                  name="button"
-                  value="submit form"
-                >
-                  Send Your Review
-                  <i class="fas fa-paper-plane"></i>
-                </button>
-              </div>
-            </form>
-          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xl-4 mt-3 mb-3">
+          <form class="contact-form">
+            <label for="form-group">All Fields With * Are Required</label>
+            <div class="form-group" id="form-group">
+              <label for="name">Enter Your Name</label>
+              <input
+                class="form-control form-control-lg"
+                id="name"
+                type="text"
+                placeholder="*"
+                required
+                data-validation-required-message="Please enter your name."
+              />
+              <p class="help-block text-danger"></p>
+              <label for="email">Enter Your Email</label>
+              <input
+                class="form-control form-control-lg"
+                id="email"
+                type="email"
+                placeholder="*"
+                required
+                data-validation-required-message="Please enter your email address."
+              />
+              <p class="help-block text-danger"></p>
+              <label for="image" class="form-label"
+                >Upload your image (optional)
+              </label>
+              <input
+                class="form-control form-control-lg mb-3"
+                id="image"
+                type="file"
+                name="image"
+                accept="image/*"
+                max-size="100px x 100px"
+                placeholder="Upload Your Image"
+                file-upload-button-text="Upload"
+                data-validation-file-accept="image/*"
+                data-validation-file-max-size="100px x 100px"
+                data-validation-file-extension="png jpg jpeg"
+                data-validation-file-button-type="button"
+              />
+              <label for="message">Enter Your Review</label>
+              <textarea
+                class="form-control form-control-lg"
+                id="message"
+                rows="5"
+                placeholder="Message"
+                required
+                data-validation-required-message="Please enter a message."
+              ></textarea>
+              <p class="help-block text-danger"></p>
+              <button
+                class="btn btn-lg animateanimated animatepulse"
+                id="sendMessageButton"
+                type="submit"
+              >
+                Send Your Review <i class="fas fa-envelope"></i>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer mt-3">
-      <div class="container">
-        <p class="text-center">&copy; AlfaGongGong 2023</p>
-      </div>
+      <p class="footer-bottom-rights text-center">
+        Web Design & Development &copy;
+        <a href="https://alfagonggong.github.io/Portfolio/"
+          >AlfaGongGong 2023</a
+        >
+      </p>
     </footer>
 
     <!-- Bootstrap JS -->
