@@ -35,7 +35,7 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top mb-3">
+    <nav class="navbar navbar-expand-lg mb-3">
       <img
         src="./images/logo.png"
         alt="logo"
@@ -55,7 +55,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#home"
               ><i class="fa-solid fa-house" style="color: #ff3cac"></i>Home</a
             >
@@ -89,13 +89,13 @@
             </p>
           </div>
           <div class="col-md-6 col-sm-12">
-            <button
-              class="btn-lg hero-btn animate__animated animate__pulse fs-5"
-              data-target="#contact"
+            <a
+              href="#contact"
+              class="btn btn-lg hero-btn animate__animated animate__pulse fs-5"
               type="button"
             >
               Contact for a Ride
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -249,7 +249,7 @@
     </section>
 
     <!-- Contact -->
-    <section class="contact mt-3 mb-3" id="contact">
+    <section class="contact mt-3 mb-3" id="contact" data-target="#contact">
       <div class="container">
         <h1 class="section-heading text-center text-uppercase mb-4 mt-4">
           Contact Us

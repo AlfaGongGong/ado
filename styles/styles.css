@@ -111,34 +111,9 @@ ul {
   color: #fffb96;
 }
 
-.navbar-nav .nav-item .nav-link a:hover,
-.navbar-nav .nav-item .nav-link i.fas:hover,
-{
-opacity: 1;
-text-decoration: none;
-transform: scale(1.5);
-}
-
-.navbar-nav .nav-item .nav-link:visited:hover {
-  text-decoration: none;
-  transform: scale(1.5);
-  opacity: 1;
-}
-
-.navbar-nav .nav-item .nav-link.active {
+a.nav-link:hover {
   opacity: 1;
   text-decoration: none;
-  transform: scale(1.5);
-}
-
-.logo {
-  width: 100%;
-  height: 100%;
-  transition: transform 0.3s ease;
-
-}
-
-.logo:hover {
   transform: scale(1.5);
 }
 
@@ -291,7 +266,7 @@ transform: scale(1.5);
   color: #fffb96;
 }
 
-button.hero-btn {
+.hero-btn {
   display: inline-block;
   padding: 1rem 2rem;
   border: 2px solid #ff3cac;
@@ -300,6 +275,11 @@ button.hero-btn {
   font-weight: bold;
   font-family: var(--nav-text);
   font-size: var(--default);
+  color: #ff3cac;
+}
+
+.hero-btn:hover {
+  background-color: #fff710;
   color: #ff3cac;
 }
 
@@ -772,11 +752,7 @@ button .fas.fa-paper-plane {
 #sendMessageButton:hover,
 #sendMessageButton:active,
 #sendMessageButton:focus,
-#sendMessageButton:visited,
-.hero-btn:hover,
-.hero-btn:active,
-.hero-btn:focus,
-.hero-btn:visited {
+#sendMessageButton:visited {
   text-decoration: none;
   background-color: #fff710;
   transition: all 0.3s ease;
